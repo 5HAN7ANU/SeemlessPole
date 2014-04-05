@@ -5,6 +5,8 @@ module PagesHelper
       render "contact_us"
     when "about"
       render "about"
+    when "home"
+      render "home"
     end
   end
 end
