@@ -30,12 +30,11 @@
     <% pole_images.each_with_index do |img,i| %>
       <div class=<%=i == 1 ? "item active" : "item"%>>      
         <%= image_tag(img, class: "big_ass_image")%>
-      <% end %>
+      </div>
       <div class="carousel-caption">
         ...
       </div>
-    </div>
-    ...
+    <% end %>
   </div>
 
   <!-- Controls -->
