@@ -9,4 +9,11 @@ module PagesHelper
       render "home"
     end
   end
+
+  def pole_images
+    [
+      "S5000654.jpg",
+      "SDC12010.jpg",
+    ]
+  end
 end
