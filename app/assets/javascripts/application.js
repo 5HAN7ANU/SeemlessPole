@@ -15,7 +15,10 @@
 //= require twitter/bootstrap
 //= require turbolinks
 //= require_tree .
-
 $(document).ready(function(){
-  $(".carousel").carousel()
-})
+  $('.carousel').carousel({
+    interval: 6000
+  });
+
+  $('.carousel').carousel('next');
+});
