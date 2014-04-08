@@ -1,6 +1,10 @@
 source 'https://rubygems.org'
 gem 'haml-rails'
 
+group :production do
+  gem 'pg'
+end
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.3'
 
