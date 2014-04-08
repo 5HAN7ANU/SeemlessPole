@@ -21,18 +21,18 @@
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <% pole_images.count.times do |time| %>
-      <li data-target="#carousel-example-generic" data-slide-to=<%=time.to_s %> class=<% time == 1 ? "active" : ""%>></li>
+      <li data-target="#carousel-example-generic" data-slide-to=<%=time.to_s %> class=<% time == 0 ? "active" : ""%>></li>
     <% end %>
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <% pole_images.each_with_index do |img,i| %>
-      <div class=<%=i == 1 ? "item active" : "item"%>>      
+      <div class=<%=i == 0 ? "item active" : "item"%>>      
         <%= image_tag(img, class: "big_ass_image")%>
-      </div>
-      <div class="carousel-caption">
-        ...
+        <div class="carousel-caption">
+          ...
+        </div>
       </div>
     <% end %>
   </div>

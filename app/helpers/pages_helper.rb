@@ -13,7 +13,9 @@ module PagesHelper
   def pole_images
     [
       "S5000654.jpg",
-      "SDC12010.jpg",
+      "S5000654.jpg",
+      "S5000654.jpg",
+      "S5000654.jpg",
     ]
   end
 end
