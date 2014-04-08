@@ -27,8 +27,8 @@
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
-    <% pole_images.each do |img| %>
-      <div class=<%=time.to_s == 1 ? "item active" : "item"%>>      
+    <% pole_images.each_with_index do |img,i| %>
+      <div class=<%=i == 1 ? "item active" : "item"%>>      
         <%= image_tag(img, class: "big_ass_image")%>
       <% end %>
       <div class="carousel-caption">
