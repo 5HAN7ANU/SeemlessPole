@@ -36,9 +36,16 @@
 
       .row-fluid
         = bootstrap_flash
-        = yield
- 
-      =render partial: "pages/affix"
-   
+        .span2
+        .span8
+          = yield
+        .span2
+          .well.sidebar-nav
+            %ul.nav.nav-list
+              %li.nav-header Sidebar
+              %li= link_to "Link 1", "#one"
+              %li= link_to "Link 2", "#two"
+              %li= link_to "Link 3", "#three"
+
       %footer
         %p &copy; Company 2014
