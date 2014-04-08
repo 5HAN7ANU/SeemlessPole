@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Page.all.map(&:destroy)
+
+[{"title"=>"Contact Us", "slug"=>"contact-us"}, {"title"=>"About Us", "slug"=>"about"}, {"title"=>"Home", "slug"=>"home"}].each do |page|
+  Page.create(slug: page[:slug], title: page[:title])
+end
