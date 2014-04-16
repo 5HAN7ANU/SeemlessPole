@@ -8,6 +8,16 @@
 
 Page.all.map(&:destroy)
 
-[{"title"=>"Contact Us", "slug"=>"contact-us"}, {"title"=>"About Us", "slug"=>"about"}, {"title"=>"Home", "slug"=>"home"}].each do |page|
+[
+  {"title"=>"Contact Us", "slug"=>"contact-us"},
+  {"title"=>"About Us", "slug"=>"about"},
+  {"title"=>"Home", "slug"=>"home"},
+  {"title"=>"30 Seconds", "slug"=>"30seconds"},
+  {"title"=>"Advantages", "slug"=>"advantages"},
+  {"title"=>"Climb", "slug"=>"climb"},
+  {"title"=>"Lighting", "slug"=>"lighting"},
+  {"title"=>"Molten Metal Pole", "slug"=>"moltenmetalpole"},
+  {"title"=>"Production", "slug"=>"production"},
+].each do |page|
   Page.create(slug: page["slug"], title: page["title"])
 end

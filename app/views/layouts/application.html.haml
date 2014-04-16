@@ -19,21 +19,7 @@
 
 
   %body
-    .navbar.navbar-fluid-top
-      .navbar-inner
-        .container-fluid
-          %a.btn.btn-navbar(data-target=".nav-collapse" data-toggle="collapse")
-            %span.icon-bar
-            %span.icon-bar
-            %span.icon-bar
-          %a.brand(href="#") Seemlesspoleinc
-          .container.nav-collapse
-            %ul.nav
-              - Page.all.each do |page|
-                %li= link_to page.title, "/#{page.slug}"
-
     .container-fluid
-
       .row-fluid
         = bootstrap_flash
         .span2
@@ -42,10 +28,8 @@
         .span2
           .well.sidebar-nav
             %ul.nav.nav-list
-              %li.nav-header Sidebar
-              %li= link_to "Link 1", "#one"
-              %li= link_to "Link 2", "#two"
-              %li= link_to "Link 3", "#three"
+              - Page.all.each do |page|
+                %li= link_to page.title, page
 
       %footer
         %p &copy; Company 2014

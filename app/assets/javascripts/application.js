@@ -13,11 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
-//= require turbolinks
 //= require_tree .
 $(document).ready(function(){
   $('.carousel').carousel({
-    interval: 6000
+    interval: 3000
   });
 
   $('.carousel').carousel('next');
