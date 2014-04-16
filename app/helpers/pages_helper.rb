@@ -9,6 +9,16 @@ module PagesHelper
       render "home"
     when "moltenmetalpole"
       render "moltenmetaltopole"
+    when "30seconds"
+      render "thirty_seconds"
+    when "advantages"
+      render "advantages"
+    when "climb"
+      render "climb"
+    when "lighting"
+      render "lighting"
+    when "production"
+      render "production"
     end
   end
 
